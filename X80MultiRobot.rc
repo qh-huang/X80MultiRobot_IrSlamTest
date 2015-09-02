@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\X80MultiRobot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\X80MultiRobot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About X80MultiRobot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "X80MultiRobot Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_X80MULTIROBOT_DIALOG DIALOGEX 0, 0, 271, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "X80MultiRobot"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "EXIT",IDCANCEL,121,289,42,25
+    CONTROL         "",IDC_DRROBOTSDKCONTROLCTRL1,
+                    "{BA13A8F8-8612-4A93-A09C-3DFAC0D3AACF}",WS_TABSTOP,183,247,81,67
+    GROUPBOX        "Sonar Sensor",IDC_Sonar,183,7,81,71
+    EDITTEXT        IDC_Sonar1,202,19,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sonar2,202,39,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sonar3,202,57,46,15,ES_AUTOHSCROLL
+    LTEXT           "#1",IDC_STATIC,189,23,8,8
+    LTEXT           "#2",IDC_STATIC,188,43,13,8
+    LTEXT           "#3",IDC_STATIC,190,60,10,9
+    GROUPBOX        "IR Range",IDC_STATIC,7,7,170,86
+    EDITTEXT        IDC_IR1,21,23,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR2,60,17,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR3,95,17,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR4,130,23,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR5,144,44,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR6,76,74,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR7,8,41,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Mottion Control",IDC_STATIC,7,221,60,61
+    PUSHBUTTON      "^",IDC_Forward,31,230,14,14
+    PUSHBUTTON      "<",IDC_TurnLeft,15,246,14,14
+    PUSHBUTTON      "O",IDC_Stop,31,246,14,14
+    PUSHBUTTON      ">",IDC_TurnRight,47,246,14,14
+    PUSHBUTTON      "v",IDC_Back,31,261,14,14
+    GROUPBOX        "Encoder",IDC_STATIC,183,154,62,55
+    EDITTEXT        IDC_Encoder1,198,168,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Encoder2,198,191,38,12,ES_AUTOHSCROLL
+    LTEXT           "#1",IDC_STATIC,187,169,8,9
+    LTEXT           "#2",IDC_STATIC,187,192,9,10
+    LTEXT           "Robot Front ",IDC_STATIC,68,36,41,8
+    LTEXT           "Robot Back",IDC_STATIC,71,65,44,9
+    CONTROL         "",IDC_DRROBOTSDKCONTROLCTRL2,
+                    "{BA13A8F8-8612-4A93-A09C-3DFAC0D3AACF}",NOT WS_VISIBLE | WS_TABSTOP,14,293,16,20
+    PUSHBUTTON      "TEST",IDC_BUTTON_TEST,26,291,41,23
+    GROUPBOX        "Sonar Measurement",IDC_Sonar4,183,82,81,71
+    EDITTEXT        IDC_Sonar_1,202,94,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sonar_2,202,114,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sonar_3,202,132,46,15,ES_AUTOHSCROLL
+    LTEXT           "#1",IDC_STATIC,189,98,8,8
+    LTEXT           "#2",IDC_STATIC,187,118,13,8
+    LTEXT           "#3",IDC_STATIC,190,135,10,9
+    GROUPBOX        "IR Measurement",IDC_STATIC,7,93,172,79
+    EDITTEXT        IDC_IR_1,23,110,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_2,63,103,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_3,98,103,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_4,131,110,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_5,147,131,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_6,79,153,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR_7,11,128,30,12,ES_AUTOHSCROLL
+    LTEXT           "Robot Front ",IDC_STATIC,74,121,41,8
+    LTEXT           "Robot Back",IDC_STATIC,74,139,44,9
+    CONTROL         "",IDC_SPIN_Velocity1,"msctls_updown32",UDS_ARROWKEYS,53,185,12,13
+    EDITTEXT        IDC_Velocity1,25,186,23,12,ES_AUTOHSCROLL
+    GROUPBOX        "Velocity",IDC_STATIC,7,174,61,43
+    CONTROL         "",IDC_SPIN_Velocity2,"msctls_updown32",UDS_ARROWKEYS,53,202,12,13
+    EDITTEXT        IDC_Velocity2,25,202,23,12,ES_AUTOHSCROLL
+    LTEXT           "#1",IDC_STATIC,14,189,8,9
+    LTEXT           "#2",IDC_STATIC,14,203,9,10
+    PUSHBUTTON      "Reset Pose",IDC_BUTTON_RESET_POSE,73,290,41,24
+    PUSHBUTTON      "START",IDC_BUTTON_START,73,263,41,24
+    PUSHBUTTON      "STOP",IDC_BUTTON_STOP,121,263,41,24
+    CONTROL         "Online-Test",IDC_CHECK_ONLINE_TEST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,180,48,10
+    LTEXT           "File Path: ",IDC_STATIC_FILE_PATH,75,212,189,30
+    CONTROL         "Save Data",IDC_CHECK_SAVE_DATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,200,43,10
+    PUSHBUTTON      "Select",IDC_BUTTON_SELECT_FILE_PATH,119,197,47,14
+    CONTROL         "Simulate",IDC_CHECK_SIMULATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,180,40,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "X80MultiRobot MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "X80MultiRobot"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "X80MultiRobot.EXE"
+            VALUE "ProductName", "X80MultiRobot Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_X80MULTIROBOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_X80MULTIROBOT_DIALOG DLGINIT
+BEGIN
+    IDC_DRROBOTSDKCONTROLCTRL1, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0bbe, 0x0000, 0x0903, 0x0000, 0x0000, 
+0x0000, 
+    IDC_DRROBOTSDKCONTROLCTRL2, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0251, 0x0000, 0x02bb, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_X80MULTIROBOT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About X80MultiRobot..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\X80MultiRobot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
